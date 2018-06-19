@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">InfoNepal</string>
+    <string name="action_settings">Settings</string>
+    <string name="activation">Put enter your Activation Key</string>
+    <string name="lable_activation">Activate</string>
+    <string name="warning">Warning</string>
+    <string name="message">Message</string>
+    <string name="info">info</string>
+    <string name="error">Error</string>
+</resources>

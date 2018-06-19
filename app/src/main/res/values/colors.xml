@@ -1,0 +1,92 @@
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#505050</color>
+    <color name="colorAccent">#4ba0d7</color>
+
+
+
+
+    <color name="primaryColor">#454764</color>
+    <color name="primaryDarkColor">#2b2d42</color>
+    <color name="primary_tp">#aa454764</color>
+
+    <color name="colorBackgroundMain">#ECF0F1</color>
+
+    <color name="white_40">#73ffffff</color>
+
+    <color name="black_10">#1a000000</color>
+    <color name="black_30">#4d000000</color>
+
+    <!--blue-->
+    <color name="blue">#2980b9</color>
+    <color name="blue_70">#b32980b9</color>
+    <color name="text_secondary">#80000000</color>
+    <color name="text_primary">#ee000000</color>
+
+
+    <!-- tab c0lor-->
+
+    <color name="colorIndivateTab">#ffff</color>
+
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#a4a4a4</color>
+    <color name="colorCardView">#f7f7f7</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_800">#212121</color>
+
+
+
+
+    <color name="hor_scroll">#80bbf9a8</color>
+
+    <color name="blackish_blue">#211f49</color>
+
+    <color name="jd_blue_dark">#00739d</color>
+    <color name="blue_dark_tp">#bb00739d</color>
+    <color name="text_white">#fff</color>
+    <color name="near_white">#eee</color>
+    <color name="light_gray_1">#ddd</color>
+    <color name="light_gray_2">#ccc</color>
+    <color name="dark_gray">#aaa</color>
+    <color name="darkest_gray">#555</color>
+    <color name="text_black">#000</color>
+    <color name="error">#e20</color>
+    <color name="notif_red">#f20</color>
+    <color name="red_lite">#bbfd5a42</color>
+    <color name="green">#2b1</color>
+    <color name="green_70">#B31c9d11</color>
+    <color name="green_50">#801c9d11</color>
+    <color name="green_10">#1A1c9d11</color>
+    <color name="dark_green">#1c9d11</color>
+    <color name="transparent">#0000</color>
+    <color name="gold">#f1a720</color>
+    <color name="gold_light">#ffb121</color>
+    <color name="green_tp">#a2b1</color>
+    <color name="red_tp">#aafd5a42</color>
+
+</resources>
+
+    <!--
+    100% — FF
+    95% — F2
+    90% — E6
+    85% — D9
+    80% — CC
+    75% — BF
+    70% — B3
+    65% — A6
+    60% — 99
+    55% — 8C
+    50% — 80
+    45% — 73
+    40% — 66
+    35% — 59
+    30% — 4D
+    25% — 40
+    20% — 33
+    15% — 26
+    10% — 1A
+    5% — 0D
+    0% — 00
+    -->
+
