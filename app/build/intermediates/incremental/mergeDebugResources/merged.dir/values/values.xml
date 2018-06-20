@@ -240,6 +240,8 @@
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hor_scroll">#80bbf9a8</color>
     <color name="jd_blue_dark">#00739d</color>
+    <color name="kubota_blue">#71cc10</color>
+    <color name="kubota_blue_dark">#00428e</color>
     <color name="light_gray_1">#ddd</color>
     <color name="light_gray_2">#ccc</color>
     <color name="material_blue_grey_800">#ff37474f</color>
@@ -266,6 +268,8 @@
     <color name="notif_red">#f20</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="orange_dark">#cc8110</color>
+    <color name="orange_light">#ec8110</color>
     <color name="primaryColor">#454764</color>
     <color name="primaryDarkColor">#2b2d42</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -1064,6 +1068,7 @@
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
     <string name="character_counter_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
+    <string name="commercial">Commercial</string>
     <string name="error">Error</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">android.support.design.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">android.support.design.transformation.FabTransformationSheetBehavior</string>
@@ -1077,8 +1082,10 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="residential">Residential</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="submit">Submit</string>
     <string name="warning">Warning</string>
     <string name="zxing_app_name">Barcode Scanner</string>
     <string name="zxing_button_ok">OK</string>

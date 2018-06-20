@@ -1,4 +1,4 @@
-#Tue Jun 19 14:30:08 BST 2018
-base.0=E\:\\Drac_Android\\InfoNepal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Wed Jun 20 13:09:50 BST 2018
+base.0=E\:\\Drac_Android\\InfoNepal\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 path.0=classes.dex
 renamed.0=classes.dex

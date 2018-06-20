@@ -3,7 +3,8 @@
     <color name="colorPrimaryDark">#505050</color>
     <color name="colorAccent">#4ba0d7</color>
 
-
+    <color name="kubota_blue">#71cc10</color>
+    <color name="kubota_blue_dark">#00428e</color>
 
 
     <color name="primaryColor">#454764</color>
@@ -13,6 +14,9 @@
     <color name="colorBackgroundMain">#ECF0F1</color>
 
     <color name="white_40">#73ffffff</color>
+    <color name="orange_dark">#cc8110</color>
+    <color name="orange_light">#ec8110</color>
+
 
     <color name="black_10">#1a000000</color>
     <color name="black_30">#4d000000</color>

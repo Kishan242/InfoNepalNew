@@ -7,4 +7,7 @@
     <string name="message">Message</string>
     <string name="info">info</string>
     <string name="error">Error</string>
+    <string name="submit">Submit</string>
+    <string name="residential">Residential</string>
+    <string name="commercial">Commercial</string>
 </resources>

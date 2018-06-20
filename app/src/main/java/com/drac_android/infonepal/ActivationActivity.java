@@ -108,6 +108,8 @@ public class ActivationActivity extends AppCompatActivity {
         ////Submit Activation Key
 
 
+        /**
+
         final ProgressDialog dialog = ProgressDialog.show(this, "", "Logging in");
         JSONObject cred = new JSONObject(credentials);
 
@@ -144,6 +146,13 @@ public class ActivationActivity extends AppCompatActivity {
             }
         });
         VolleyLibrary.getInstance(this).addToRequestQueue(request);
+
+         **/
+
+        Intent i = new Intent(ActivationActivity.this,MenuUI.class);
+        startActivity(i);
+        finish();
+
     }
 
 

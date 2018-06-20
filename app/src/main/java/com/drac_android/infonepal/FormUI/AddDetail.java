@@ -15,7 +15,7 @@ public class AddDetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_menuui);
+        setContentView(R.layout.layout_adddetail);
 
     }
 }
