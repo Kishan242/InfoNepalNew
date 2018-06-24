@@ -15,5 +15,7 @@
     <dimen name="spacing_72">72dp</dimen>
     <dimen name="spacing_144">144dp</dimen>
     <dimen name="text_22">22sp</dimen>
+    <dimen name="toolbar_height">50dp</dimen>
+
 
 </resources>

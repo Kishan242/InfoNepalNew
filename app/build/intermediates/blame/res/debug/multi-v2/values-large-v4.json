@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\Ngima\\infonepal\\InfoNepalNew\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "E:\\Drac_Android\\InfoNepal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\20cb15e63eca3a3e03dadf0f9589b9f0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\DRAC_Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\145f317e37b2dcd398cdbaa3b66f0fa5\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-alpha3.aar\\b4577f4f89a1820f65da9a6e2b6ceb7b\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\DRAC_Android\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0-alpha3.aar\\531fa7a36563985c9b76aae59bfd7d82\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

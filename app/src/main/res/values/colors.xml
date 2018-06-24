@@ -40,6 +40,12 @@
 
 
 
+    <color name="text_shadow">#cc000000</color>
+    <color name="highlightColor">#D90429</color>
+    <color name="accentColor">#EF233C</color>
+
+
+
 
     <color name="hor_scroll">#80bbf9a8</color>
 

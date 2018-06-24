@@ -1,6 +1,245 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView android:layout_height="fill_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <LinearLayout
+            android:id="@+id/radioButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_of_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="   House Type   "
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/text_black"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:id="@+id/housetypeRG">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/commercialRB"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/commercial"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/residentialRB"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:text="@string/residential"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/firstView"
+            android:id="@+id/commercial_layout"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <!--android:visibility="gone"-->
+
+
+
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:text="@string/latitude"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:text="@string/longitude"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="@string/latitude"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray"
+                        android:background="@drawable/border_black"
+                        android:padding="10dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:id="@+id/lat"
+                        />
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/lon"
+                        android:text="@string/longitude"
+                        android:background="@drawable/border_black"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray"
+                        android:padding="10dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        />
+
+
+                </TableRow>
+
+
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/button_get_location"
+                        android:layout_width="match_parent"
+                        android:layout_span="3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_72"
+                        android:layout_marginRight="@dimen/spacing_72"
+                        android:layout_marginTop="@dimen/spacing_24"
+                        android:background="@drawable/activation_button"
+                        android:paddingBottom="@dimen/spacing_20"
+                        android:paddingLeft="@dimen/spacing_16"
+                        android:paddingRight="@dimen/spacing_16"
+                        android:paddingTop="@dimen/spacing_20"
+                        android:text="@string/getLocation"
+                        android:textColor="@android:color/white"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:text="@string/num_shutters"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray"
+                        android:background="@drawable/border_black"
+                        android:padding="10dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:id="@+id/numofshutters"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:text="@string/num_of_floors"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_white"
+                        android:padding="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_gray"
+                        android:background="@drawable/border_black"
+                        android:padding="10dip"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:gravity="center"
+                        android:id="@+id/numoffloors"
+                        android:inputType="number"
+                        />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activationKey"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/red_button"
+                android:text="@string/submit"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+</ScrollView>

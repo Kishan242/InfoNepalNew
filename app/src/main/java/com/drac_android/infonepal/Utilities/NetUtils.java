@@ -1,4 +1,4 @@
-package com.exotrac.americaneagle.Utilities;
+package com.drac_android.infonepal.Utilities;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

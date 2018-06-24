@@ -2,9 +2,12 @@ package com.drac_android.infonepal;
 
 import android.app.ProgressDialog;
 import android.app.VoiceInteractor;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.NetworkError;
@@ -32,6 +36,7 @@ import com.drac_android.infonepal.ServerResponse.ActivationResponse;
 import com.drac_android.infonepal.ServerResponse.ErrorCodes;
 import com.drac_android.infonepal.Services.VolleyLibrary;
 import com.drac_android.infonepal.Utilities.Components.AlertUsers;
+import com.drac_android.infonepal.Utilities.NetUtils;
 
 import org.json.JSONObject;
 
@@ -39,16 +44,45 @@ import java.util.HashMap;
 
 public class ActivationActivity extends AppCompatActivity {
 
+    Context mContext = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+/*
+
+        LocationManager manager = (LocationManager) getSystemService(Context.LOCATION_SERVICE );
+        boolean statusOfGPS = manager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+        Log.d("STATUSGPS",String.valueOf(statusOfGPS));
+        //  AlarmScheduler.startCrumps(this);
+        if(statusOfGPS == false) {
+
+
+            Toast.makeText(mContext,"PLease Turn on the GPS to use this APP ,Thank You!",Toast.LENGTH_LONG).show();
+
+            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+            startActivity(intent);
+        }*/
+
         setContentView(R.layout.activity_activation);
+
+
 
         ((Button) findViewById(R.id.button_activation)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Check for the Activation
-                validateform();
+
+
+                /*if(NetUtils.isOnline(mContext)){
+                    validateform();
+                }
+                else {
+                    Toast.makeText(mContext,"Please connect to inbternet! ,Thank You!",Toast.LENGTH_LONG).show();
+
+                    Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
+                    startActivity(intent);
+                }*/
             }
         });
 
