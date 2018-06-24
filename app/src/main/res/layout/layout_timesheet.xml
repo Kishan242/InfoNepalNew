@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/primaryColor"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            >
+
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:src="@drawable/bramlogo"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/gps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center|center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gpslogo"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+           >
+
+
+            <TableRow
+                android:id="@+id/startTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/shiftstart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_button"
+                    android:elevation="8dp"
+                    android:text="Shift Start"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_white" />
+
+            </TableRow>
+
+
+            <!--            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:fillViewport="true">-->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:id="@+id/tabledforStart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:orientation="vertical">
+
+                        <!--
+                        android:background="@drawable/cell_shape"
+-->
+
+                        <TextView
+                            android:id="@+id/timeheader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Started At   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/startedtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/locationheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="    Latitude    "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/startlat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/postalcodeheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Longitude   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/startlon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TableRow
+                android:id="@+id/lunchTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+          <!--      android:background="@drawable/cell_shape"-->
+                <Button
+                    android:id="@+id/lunchstart"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_button"
+                    android:elevation="8dp"
+                    android:text="Lunch Start"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_white" />
+
+
+                <Button
+                    android:id="@+id/lunchend"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_button"
+                    android:elevation="8dp"
+                    android:text="Lunch End"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_white" />
+
+
+            </TableRow>
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:fillViewport="true">
+
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:id="@+id/tabledforLunch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lunchtimeheader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Lunch Started At   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/lunchstarttime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/locationheaderlunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Latitude    "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/latlunch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/postalcodeheaderlunch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Longitude   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/lonlunch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/lunchendedheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=" Lunch Ended "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/lunchendedtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            </HorizontalScrollView>
+
+
+            <TableRow
+                android:id="@+id/endTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+                <!--  android:background="@drawable/cell_shape"-->
+                <Button
+                    android:id="@+id/shiftend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_button"
+                    android:elevation="8dp"
+                    android:text="End your Day with a Smile"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_white" />
+
+            </TableRow>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:id="@+id/endtabledforStart"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/endtimeheader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Ended At   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/endtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/endlocationheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Latitude   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/endlat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/cell_shape"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/endpostalcodeheader"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="   Longitude   "
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_black"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/endlon"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/gold"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <!--
+            </HorizontalScrollView>
+            -->
+
+
+            <TableRow
+                android:id="@+id/startrow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp">
+
+
+                <TextView
+                    android:id="@+id/startmsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/gold"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+            </TableRow>
+
+            <!--
+
+
+                        <TableRow
+                            android:layout_height="wrap_content"
+                            android:layout_width="fill_parent"
+                            android:id="@+id/startrow"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="60dp"
+                            android:visibility="gone"
+                            >
+                        <HorizontalScrollView
+                            android:id="@+id/reportView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="350dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/primaryColor"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/stockReport"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:text="Address"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#eee"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/modelReport"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/model"
+                                        android:padding="10dp"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#eee"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/locationReport"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:text="@string/location"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#eee"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/StatusReport"
+                                        android:layout_width="200dp"
+                                        android:layout_height="wrap_content"
+                                        android:padding="10dp"
+                                        android:text="@string/status"
+                                        android:textAppearance="?android:attr/textAppearanceMedium"
+                                        android:textColor="#eee"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <ListView
+                                    android:id="@+id/reportList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/light_gray_2"
+                                    android:divider="@color/transparent"
+                                    android:dividerHeight="5dp"
+                                    android:orientation="vertical"
+                                    android:padding="10dp"
+
+                                    />
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+            </TableRow>
+            -->
+
+
+            <ImageView
+                android:id="@+id/issueImage"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+
+                android:scaleType="center"
+                android:src="@drawable/useme" />
+
+
+
+
+            <TableRow
+                android:id="@+id/shtable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center">
+<!--                android:background="@drawable/cell_shape"-->
+                <Button
+                    android:id="@+id/sendsh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/main_button"
+                    android:elevation="8dp"
+                    android:text="Send the ScreenShot"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_white" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
