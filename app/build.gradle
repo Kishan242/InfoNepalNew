@@ -28,11 +28,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
 
-    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
-    compile 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
-    compile('ch.acra:acra:4.5.0') {
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    implementation('ch.acra:acra:4.5.0') {
         exclude group: 'org.json', module: 'json'
     }
-    compile group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
 
 }

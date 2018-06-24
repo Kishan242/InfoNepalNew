@@ -5,7 +5,7 @@
 
     <!-- view background color -->
     <solid
-        android:color="@color/accentColor" >
+        android:color="@color/colorAccent" >
     </solid>
 
     <stroke android:color="@color/primaryDarkColor" android:width="1dp" />

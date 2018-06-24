@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\Drac_Android\InfoNepal\app\src\main\assets"/><source path="E:\Drac_Android\InfoNepal\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Drac_Android\InfoNepal\app\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="E:\Ngima\infonepal\InfoNepalNew\app\src\main\assets"/><source path="E:\Ngima\infonepal\InfoNepalNew\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\Ngima\infonepal\InfoNepalNew\app\src\debug\assets"/></dataSet></merger>

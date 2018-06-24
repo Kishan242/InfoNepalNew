@@ -14,7 +14,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height"
+        android:layout_height="wrap_content"
         android:background="@color/primaryColor"
         app:contentInsetLeft="0dp"
         app:contentInsetStart="0dp"
@@ -33,7 +33,7 @@
                 android:layout_width="140dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal|center_vertical"
-                android:src="@drawable/bramlogo"
+                android:src="@drawable/info_logo"
                 android:layout_centerInParent="true"
                 />
 
@@ -674,7 +674,7 @@
                 android:layout_margin="10dp"
 
                 android:scaleType="center"
-                android:src="@drawable/useme" />
+                android:src="@drawable/info_logo" />
 
 
 

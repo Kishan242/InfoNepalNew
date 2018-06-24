@@ -5,7 +5,7 @@
 
     <!-- view background color -->
     <solid
-        android:color="@color/highlightColor" >
+        android:color="@color/colorPrimary" >
     </solid>
 
     <stroke android:color="@color/primaryDarkColor" android:width="1dp" />
